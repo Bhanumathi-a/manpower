@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    li .active {
+        @apply text-darkBlue border-darkBlue
+    }
+
+    #search {
+        @apply w-0 hidden absolute right-10 p-1
+    }
+
+    #search.active {
+        @apply w-40 block
+    }
+
+    .count-stat {
+        @apply font-semibold text-lg
+    }
+
+    .stat-box {
+        border-top-width: 3px;
+        border-top-style: solid;
+        border-right: 1px solid #ccc;
+        padding: 10px;
+
+    }
+
+    .stat-box.active {
+        @apply bg-bgGray
+    }
+
+    .detail-box {
+        @apply font-semibold text-lg;
+        border-right: 1px solid #ccc;
+        padding: 20px 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}

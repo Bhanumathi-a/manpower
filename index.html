@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manpower</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+</head>
+
+<body class="bg-bgColor">
+    <div id="wrap" class="flex flex-col sm:flex-row  container">
+        <aside class=" bg-primary  p-4 place-items-center flex h-12 sm:flex-col sm:h-screen">
+            <a href="#" class="logo hover:shadow-2xl">
+                <img src="img/logo.svg" alt="Mangpower">
+            </a>
+            <a href="#" class="m-4"> <img src="img/ico-1.svg" alt="setting"></a>
+        </aside>
+        <section id="main" class="container">
+            <header class="flex flex-col sm:flex-row p-5">
+                <h2 class="font-bold text-xl sm:w-full md:w-3/4">User Workspace - My task - Hiring Stage - Offer</h2>
+                <div class="right flex sm:w-full md:w-1/4">
+                    <div class="searchbox relative m-3">
+                        <input type="search" id="search" placeholder="Search..." />
+                        <img src="img/ico-search.png" alt="Search" class="search-ico cursor-pointer">
+                    </div>
+                    <div class="notification m-3">
+                        <a href="#"><img src="img/ico-notification.png" alt="notification"></a>
+                    </div>
+                    <div class="help m-3">
+                        <a href="#"><img src="img/ico-help.png" alt="help"></a>
+                    </div>
+                    <div class="profile m-4 ">
+                        <a href="#">
+                            <span class="rounded-full bg-blueGray text-white px-3 py-1 font-bold">S</span>
+                        </a>
+                    </div>
+                </div>
+
+            </header>
+            <div class="tab-group">
+                <div class="wrapper">
+                    <div class=" bg-white">
+                        <ul class="border-b border-gray-200 dark:border-gray-700 mb-4 flex flex-wrap " id="myTab"
+                            data-tabs-toggle="#myTabContent" role="tablist">
+                            <li class="mr-2" role="presentation">
+                                <button
+                                    class="inline-block text-darkGray hover:text-darkBlue hover:border-darkBlue  py-4 px-4 text-sm font-medium text-center border-transparent border-b-2  tab-button active"
+                                    data-id="task" type="button" role="tab" aria-controls="task"
+                                    aria-selected="false">MY TASK </button>
+                            </li>
+                            <li class="mr-2" role="presentation">
+                                <button
+                                    class="inline-block text-darkGray hover:text-darkBlue hover:border-darkBlue  py-4 px-4 text-sm font-medium text-center border-transparent border-b-2 tab-button "
+                                    data-id="signoff" type="button" role="tab" aria-controls="signoff"
+                                    aria-selected="true">SIGNOFFS</button>
+                            </li>
+                            <li class="mr-2" role="presentation">
+                                <button
+                                    class="inline-block text-darkGray hover:text-darkBlue hover:border-darkBlue  py-4 px-4 text-sm font-medium text-center border-transparent border-b-2 tab-button "
+                                    data-id="archive" type="button" role="tab" aria-controls="archive"
+                                    aria-selected="false">ARCHIVE</button>
+                            </li>
+
+                        </ul>
+                        <div class="sub-tab-header">
+                            <ul class="border-b border-gray-200 dark:border-gray-700 mb-4 flex flex-wrap ">
+                                <li class="mr-2" role="presentation">
+                                    <button
+                                        class="inline-block text-darkGray hover:text-darkBlue hover:border-darkBlue  py-4 px-4 text-sm font-medium text-center border-transparent border-b-2  tab-button "
+                                        type="button" role="tab">Manpower RQMT </button>
+                                </li>
+                                <li class="mr-2" role="presentation">
+                                    <button
+                                        class="inline-block text-darkGray hover:text-darkBlue hover:border-darkBlue  py-4 px-4 text-sm font-medium text-center border-transparent border-b-2  tab-button "
+                                        type="button" role="tab">Job REQ</button>
+                                </li>
+                                <li class="mr-2" role="presentation">
+                                    <button
+                                        class="inline-block text-darkGray hover:text-darkBlue hover:border-darkBlue  py-4 px-4 text-sm font-medium text-center border-transparent border-b-2  tab-button "
+                                        type="button" role="tab">My Desk</button>
+                                </li>
+                                <li class="mr-2" role="presentation">
+                                    <button
+                                        class="inline-block text-darkGray hover:text-darkBlue hover:border-darkBlue  py-4 px-4 text-sm font-medium text-center border-transparent border-b-2  tab-button active"
+                                        type="button" role="tab">Hiring Stage</button>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <div class="contentWrapper">
+                        <div class="count-stat bg-white grid grid-cols-3 md:grid-cols-5 lg:grid-cols-8 m-5">
+                            <div class="stat-box border-borderBlue hover:bg-bgGray active:bg-bgGray">
+                                <span class="count block px-2">98</span>
+                                <span class="description block p-2">Job Desc</span>
+                            </div>
+                            <div class="stat-box border-borderGray hover:bg-bgGray active:bg-bgGray">
+                                <span class="count block px-2">98</span>
+                                <span class="description block p-2">Skill Capture</span>
+                            </div>
+                            <div class="stat-box border-borderGreen hover:bg-bgGray active:bg-bgGray">
+                                <span class="count block px-2">98</span>
+                                <span class="description block p-2">Sourcing</span>
+                            </div>
+                            <div class="stat-box border-borderYellow hover:bg-bgGray active:bg-bgGray">
+                                <span class="count block px-2">98</span>
+                                <span class="description block p-2">Screening</span>
+                            </div>
+                            <div class="stat-box border-borderDarkPink hover:bg-bgGray active:bg-bgGray">
+                                <span class="count block px-2">98</span>
+                                <span class="description block p-2">Interview</span>
+                            </div>
+                            <div class="stat-box border-borderLightPink active hover:bg-bgGray active:bg-bgGray">
+                                <span class="count block px-2">98</span>
+                                <span class="description block p-2">Offer</span>
+                            </div>
+                            <div class="stat-box border-borderGray2 hover:bg-bgGray active:bg-bgGray">
+                                <span class="count block px-2">98</span>
+                                <span class="description block p-2">Joining</span>
+                            </div>
+                            <div class="stat-box border-borderGreen2 hover:bg-bgGray active:bg-bgGray">
+                                <span class="count block px-2">98</span>
+                                <span class="description block p-2">Handover</span>
+                            </div>
+                        </div>
+                        <div class="content active" id="task">
+
+                            <div class="row rounded-lg bg-white drop-shadow-lg my-5 flex flex-col sm:flex-row ">
+                                <div class="detail-box  grow">Christian</div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Job Title</span>
+                                    <span class="block text-sm">Project Manager</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Department</span>
+                                    <span class="block text-sm">Web Development</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Emp Type</span>
+                                    <span class="block text-sm">Full Time</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Experience</span>
+                                    <span class="block text-sm">10 Years</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Salary</span>
+                                    <span class="block text-sm">15L - 20L</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Notice Period</span>
+                                    <span class="block text-sm">2 Months</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Signoff by</span>
+                                    <span class="block text-sm">Robin Williams</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Timeline Status</span>
+                                    <span class="block text-sm">At Risk</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Status</span>
+                                    <span class="block text-sm">Awaiting Signoff</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Action</span>
+                                    <span class="block text-sm">
+                                        <a href="">
+                                            <img src="img/ico-edit.png" alt="Edit">
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row rounded-lg bg-white drop-shadow-lg my-5 flex flex-col sm:flex-row ">
+                                <div class="detail-box  grow">Christian</div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Job Title</span>
+                                    <span class="block text-sm">Project Manager</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Department</span>
+                                    <span class="block text-sm">Web Development</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Emp Type</span>
+                                    <span class="block text-sm">Full Time</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Experience</span>
+                                    <span class="block text-sm">10 Years</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Salary</span>
+                                    <span class="block text-sm">15L - 20L</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Notice Period</span>
+                                    <span class="block text-sm">2 Months</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Signoff by</span>
+                                    <span class="block text-sm">Robin Williams</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Timeline Status</span>
+                                    <span class="block text-sm">At Risk</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Status</span>
+                                    <span class="block text-sm">Awaiting Signoff</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Action</span>
+                                    <span class="block text-sm">
+                                        <a href="">
+                                            <img src="img/ico-edit.png" alt="Edit">
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row rounded-lg bg-white drop-shadow-lg my-5 flex flex-col sm:flex-row ">
+                                <div class="detail-box  grow">Christian</div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Job Title</span>
+                                    <span class="block text-sm">Project Manager</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Department</span>
+                                    <span class="block text-sm">Web Development</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Emp Type</span>
+                                    <span class="block text-sm">Full Time</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Experience</span>
+                                    <span class="block text-sm">10 Years</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Salary</span>
+                                    <span class="block text-sm">15L - 20L</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Notice Period</span>
+                                    <span class="block text-sm">2 Months</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Signoff by</span>
+                                    <span class="block text-sm">Robin Williams</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Timeline Status</span>
+                                    <span class="block text-sm">At Risk</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Status</span>
+                                    <span class="block text-sm">Awaiting Signoff</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Action</span>
+                                    <span class="block text-sm">
+                                        <a href="">
+                                            <img src="img/ico-edit.png" alt="Edit">
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row rounded-lg bg-white drop-shadow-lg my-5 flex flex-col sm:flex-row ">
+                                <div class="detail-box  grow">Christian</div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Job Title</span>
+                                    <span class="block text-sm">Project Manager</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Department</span>
+                                    <span class="block text-sm">Web Development</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Emp Type</span>
+                                    <span class="block text-sm">Full Time</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Experience</span>
+                                    <span class="block text-sm">10 Years</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Salary</span>
+                                    <span class="block text-sm">15L - 20L</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Notice Period</span>
+                                    <span class="block text-sm">2 Months</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Signoff by</span>
+                                    <span class="block text-sm">Robin Williams</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Timeline Status</span>
+                                    <span class="block text-sm">At Risk</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Status</span>
+                                    <span class="block text-sm">Awaiting Signoff</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Action</span>
+                                    <span class="block text-sm">
+                                        <a href="">
+                                            <img src="img/ico-edit.png" alt="Edit">
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row rounded-lg bg-white drop-shadow-lg my-5 flex flex-col sm:flex-row ">
+                                <div class="detail-box  grow">Christian</div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Job Title</span>
+                                    <span class="block text-sm">Project Manager</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Department</span>
+                                    <span class="block text-sm">Web Development</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Emp Type</span>
+                                    <span class="block text-sm">Full Time</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Experience</span>
+                                    <span class="block text-sm">10 Years</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Salary</span>
+                                    <span class="block text-sm">15L - 20L</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Notice Period</span>
+                                    <span class="block text-sm">2 Months</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Signoff by</span>
+                                    <span class="block text-sm">Robin Williams</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Timeline Status</span>
+                                    <span class="block text-sm">At Risk</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Status</span>
+                                    <span class="block text-sm">Awaiting Signoff</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Action</span>
+                                    <span class="block text-sm">
+                                        <a href="">
+                                            <img src="img/ico-edit.png" alt="Edit">
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row rounded-lg bg-white drop-shadow-lg my-5 flex flex-col sm:flex-row ">
+                                <div class="detail-box  grow">Christian</div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Job Title</span>
+                                    <span class="block text-sm">Project Manager</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Department</span>
+                                    <span class="block text-sm">Web Development</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Emp Type</span>
+                                    <span class="block text-sm">Full Time</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Experience</span>
+                                    <span class="block text-sm">10 Years</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Salary</span>
+                                    <span class="block text-sm">15L - 20L</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Notice Period</span>
+                                    <span class="block text-sm">2 Months</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Signoff by</span>
+                                    <span class="block text-sm">Robin Williams</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Timeline Status</span>
+                                    <span class="block text-sm">At Risk</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Status</span>
+                                    <span class="block text-sm">Awaiting Signoff</span>
+                                </div>
+                                <div class="detail-box grow">
+                                    <span class="text-darkBlue block text-sm">Action</span>
+                                    <span class="block text-sm">
+                                        <a href="">
+                                            <img src="img/ico-edit.png" alt="Edit">
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <p class="content" id="signoff">
+                            Robin
+                            Project Manager
+                            Job Title
+                            Web Development
+                            Department
+                            Emp Type
+                            Experience
+                            Salary
+                            Notice Period
+                            Signoff by
+                            Timeline Status
+                            Status
+                            Action
+                            Full Time
+                            10 Years
+                            15L - 20L
+                            2 Months
+                            Robin Williams
+                            At Risk
+                            Rejected offer
+                            by Hire up
+                            James
+                            Project Manager
+                            Job Title
+                            Web Development
+                            Department
+                            Emp Type
+                            Experience
+                            Salary
+                            Notice Period
+                            Signoff by
+                            Timeline Status
+                            Status
+                            Action
+                            Full Time
+                            10 Years
+                            15L - 20L
+                            2 Months
+                            Robin Williams
+                            At Risk
+                            Pending offer
+                            to candidate
+                            Thomas
+                            Project Manager
+                            Job Title
+                            Web Development
+                            Department
+                            Emp Type
+                            Experience
+                            Salary
+                            Notice Period
+                            Signoff by
+                            Timeline Status
+                            Status
+                            Action
+                            Full Time
+                            10 Years
+                            15L - 20L
+                            2 Months
+                            Robin Williams
+                            At Risk
+                            Rejected offer
+                            by candidate
+                            Johnson
+                            Project Manager
+                            Job Title
+                            Web Development
+                            Department
+                            Emp Type
+                            Experience
+                            Salary
+                            Notice Period
+                            Signoff by
+                            Timeline Status
+                            Status
+                            Action
+                            Full Time
+                            10 Years
+                            15L - 20L
+                            2 Months
+                            Robin Williams
+                            At Risk
+                            Pending acceptence
+                            by candidate
+                            Steve
+                            Project Manager
+                            Job Title
+                            Web Development
+                            Department
+                            Emp Type
+                            Experience
+                            Salary
+                            Notice Period
+                            Signoff by
+                            Timeline Status
+                            Status
+                            Action
+                            Full Time
+                            10 Years
+                            15L - 20L
+                            2 Months
+                            Robin Williams
+                            At Risk
+                            Awaiting Signoff
+                        </p>
+                        <p class="content" id="archive">
+                            Archive
+                        </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+    </div>
+    <style>
+        .content {
+            display: none;
+            padding: 10px 20px;
+        }
+
+        .content.active {
+            display: block;
+        }
+    </style>
+
+    <script src="js/app.js"></script>
+    <script src="js/tab.js"></script>
+
+
+
+
+</body>
+
+</html>
